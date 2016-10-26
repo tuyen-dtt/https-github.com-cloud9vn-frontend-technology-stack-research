@@ -112,7 +112,7 @@ header{
 		.list-group-item {
 			display: inline-block;
 		    position: relative;
-		    width: 215px;
+		    width: 219px;
 		    height: 83px;
 		    border: $blue solid 3px;
 		    vertical-align: top;
@@ -188,30 +188,59 @@ header{
 		.content {
 			height: 100px;
 			background-color:$light-gray;
-			margin-bottom: 9px;
-			padding-top: 9px;
+			margin-bottom: 28px;
+			padding-top: 8px;
+			border-bottom:2px solid $blue;
 				button{
 					height: 40px;
 					width:620px;
 					border: 1px #cbcbcb solid;
 					background-color:$white;
 					color:#555555;
+					margin-right: 20px;
+					padding:0;
 					p{
 						margin: 10px 0 0 10px;
     					float: left;
+    					font-size: 14px;
 					}
-					.narrow{
+					.narrow {
 						float: right;
 						display: inline-block;
-						border: 1px #cbcbcb solid;
+						border-left: 1px #cbcbcb solid;
 						width:50px;
-						height: 40px;
+						height: 38px;
 						background:url("../images/sprite.png") no-repeat ;
+						background-position: 15px -250px;
 					}	
-				}	
-			}	
+				}
+				span{
+					color: $blue;
+					opacity: 0.7;
+
+				}		
+			}
+		.area{
+			height: 565px;
+			.method{
+				display: inline-block;
+				font-size: 24px;
+				font-weight:bold;
+				position:relative;
+				&:before{
+					height: 20px;
+					width:34px;
+					display: block;
+				    content: " ";
+				    position: absolute;
+				    top: -3px;
+					background: url("../images/sprite.png") no-repeat;
+					background-position: 0 -204px;
+				}
+			}
+		}		
 		
-		.btn{
+		/* .btn{
 			border:3px solid #bbb;
 			background-color:$white;
 			color: $blue;
@@ -222,11 +251,11 @@ header{
 			&:last-child{
 				margin-right: 0;
 			} 
-		}
+		} */
 	}
 
 
-.nav-tabs {
+/* .nav-tabs {
 	border:1px solid $blue;
 }
 .button{
@@ -236,4 +265,4 @@ header{
 		color:$white;
 		
 	}
-}
+} */

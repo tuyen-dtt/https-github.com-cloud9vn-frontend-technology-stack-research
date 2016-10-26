@@ -79,7 +79,7 @@ header {
   .top-wrap .list-group .list-group-item {
     display: inline-block;
     position: relative;
-    width: 215px;
+    width: 219px;
     height: 83px;
     border: #007dbf solid 3px;
     vertical-align: top;
@@ -126,54 +126,84 @@ header {
       margin-right: 0;
       border-radius: 4px; }
 
-.page-content .title {
-  background-color: #007dbf;
-  height: 50px;
-  margin-bottom: 19px; }
-  .page-content .title p {
-    font-weight: bold;
-    font-size: 28px;
-    padding-top: 6px;
-    color: #fff; }
-.page-content .content {
-  height: 100px;
-  background-color: #f2f2f2;
-  margin-bottom: 9px;
-  padding-top: 9px; }
-  .page-content .content button {
-    height: 40px;
-    width: 620px;
-    border: 1px #cbcbcb solid;
-    background-color: #fff;
-    color: #555555; }
-    .page-content .content button p {
-      margin: 10px 0 0 10px;
-      float: left; }
-    .page-content .content button .narrow {
-      float: right;
-      display: inline-block;
-      border: 1px #cbcbcb solid;
-      width: 50px;
-      height: 40px;
-      background: url("../images/sprite.png") no-repeat; }
-.page-content .btn {
-  border: 3px solid #bbb;
-  background-color: #fff;
-  color: #007dbf;
-  height: 60px;
-  border-radius: 5px;
-  margin-right: 29px;
-  width: 316px; }
-  .page-content .btn:last-child {
-    margin-right: 0; }
-
-.nav-tabs {
-  border: 1px solid #007dbf; }
-
-.button {
-  text-align: center; }
-  .button .btn-normal {
+.page-content {
+  /* .btn{
+  	border:3px solid #bbb;
+  	background-color:$white;
+  	color: $blue;
+  	height: 60px;
+  	border-radius: 5px;
+  	margin-right: 29px;
+  	width:316px;
+  	&:last-child{
+  		margin-right: 0;
+  	} 
+  } */ }
+  .page-content .title {
     background-color: #007dbf;
-    color: #fff; }
+    height: 50px;
+    margin-bottom: 19px; }
+    .page-content .title p {
+      font-weight: bold;
+      font-size: 28px;
+      padding-top: 6px;
+      color: #fff; }
+  .page-content .content {
+    height: 100px;
+    background-color: #f2f2f2;
+    margin-bottom: 28px;
+    padding-top: 8px;
+    border-bottom: 2px solid #007dbf; }
+    .page-content .content button {
+      height: 40px;
+      width: 620px;
+      border: 1px #cbcbcb solid;
+      background-color: #fff;
+      color: #555555;
+      margin-right: 20px;
+      padding: 0; }
+      .page-content .content button p {
+        margin: 10px 0 0 10px;
+        float: left;
+        font-size: 14px; }
+      .page-content .content button .narrow {
+        float: right;
+        display: inline-block;
+        border-left: 1px #cbcbcb solid;
+        width: 50px;
+        height: 38px;
+        background: url("../images/sprite.png") no-repeat;
+        background-position: 15px -250px; }
+    .page-content .content span {
+      color: #007dbf;
+      opacity: 0.7; }
+  .page-content .area {
+    height: 565px; }
+    .page-content .area .method {
+      display: inline-block;
+      font-size: 24px;
+      font-weight: bold;
+      position: relative; }
+      .page-content .area .method:before {
+        height: 20px;
+        width: 34px;
+        display: block;
+        content: " ";
+        position: absolute;
+        top: -3px;
+        background: url("../images/sprite.png") no-repeat;
+        background-position: 0 -204px; }
+
+/* .nav-tabs {
+	border:1px solid $blue;
+}
+.button{
+	text-align:center;
+	.btn-normal{
+		background-color:$blue;
+		color:$white;
+		
+	}
+} */
 
 /*# sourceMappingURL=main.css.map */

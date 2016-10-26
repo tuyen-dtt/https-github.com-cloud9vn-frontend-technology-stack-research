@@ -6,54 +6,91 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>Trainning</title>
-	<link rel="stylesheet" type="text/css" href="../app/styles/main.css">
 	<link type="text/css" rel="stylesheet" href="../bower_components/normalize-css/normalize.css"/>
 	<link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../app/styles/main.css">
+	
 </head>
 
 <body>
 
-	<header>
-		<div class="header">
-			<div class="container">
-				<span>○○○○取引先名 </span>
-				<span>○○○○部署名 </span>
-				<span>混雑 太郎 様 </span>
-				<div class="log-out"><a href="#">ログアウト</a></div>
-			</div>
-		</div>
-		<div class="block-step">
-			<div class="container">
-				<div class="step1">Step 1 商品種別・集計エリアの指定 </div>
-				<div class="step2">Step 2 集計条件の設定 </div>
-				<div class="step3">Step 3 集計項目の確認 </div>	
-				<div class="step4">Step 4 使用目的の確認 </div>
-			</div>
-		</div>	
-	</header>
-	<section class="main-contain">
-		<div class="title">
-			<div class="container">
-				<select>
-					<option>来訪者データ（対象エリア流入者の人数や居住地などを把握できる商圏分析用データ）</option>
-				</select>
-				<span>※変更すると以降の設定がリセットされます</span>
-			</div>
-		
-			<div class="title">
-				<div class="container">
-					<div><span>手順① </span>エリア選択方法 </div>
-					<div>都道府県/市区町村単位で指定 </div>
-					<div>都道府県/市区町村単位で指定 </div>
-					<div>都道府県/市区町村単位で指定 </div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<footer>
-		<button class="btn" >次へ </button>
-	</footer>
-<script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
-</body>
+<header>
+    <div class="container">
+    	<div class="inner">
+	        <nav class="top-nav">
+	            <ul>
+	                <li><a href="#">○○○○取引先名 </a></li>
+	                <li><a href="#">○○○○部署名 </a></li>
+	                <li class="congestion"><a href="#">混雑 太郎 様 </a></li>
+	            </ul>
+	            <span class="log-out"><a href="#">ログアウト</a></span>
+            </nav>
+        </div>
+    </div>
+</header>
 
+<div class="top-wrap">
+    <section class="block-step container">
+        <div class="list-group inner">
+            <a href="#" class="list-group-item active "><span>Step 1</span><span>商品種別・集計エリアの指定 </span></a>
+            <a href="#" class="list-group-item "><span>Step 2</span><span>集計条件の設定 </span></a>
+            <a href="#" class="list-group-item"><span>Step 3</span><span>集計項目の確認  </span></a>
+             <a href="#" class="list-group-item"><span>Step 4</span><span>使用目的の確認 </span></a>
+        </div>
+    </section>
+    <div class="page-content">
+            <div class="title container"><p class="inner">商品種別を選択してください</p></div>
+            <div class="content container">
+            <button class="inner"><p>来訪者データ（対象エリア流入者の人数や居住地などを把握できる商圏分析用データ</p><span class="narrow"></span></button>
+            
+            <span >※変更すると以降の設定がリセットされます</span>
+             </div>
+        
+        <section class="wrap container">
+            <div class="title"><p class="inner"> 集計エリアを指定してください</p></div>
+            <div class="content inner">
+                <div class="">
+                    <span >手順①</span>
+                    エリア選択方法
+                </div>
+                <div>
+                <button type="button" class="btn btn-1 active">都道府県/市区町村単位で指定 </button>
+                <button type="button" class="btn btn-2">メッシュで指定 </button>
+                <button type="button" class="btn btn-3">任意の形状で指定 </button>
+                </div>
+                <div class="">
+                    <span >手順②</span>
+                    対象エリア 
+                </div>
+                <p>都道府県または市区町村にチェックを入れて、集計したいエリアを選んでください（複数選択可能）</p>
+            </div>
+        </section>
+        <section class="wrap container">
+            <div class="tabview inner">
+                <div class="tab-header">
+                    <ul>
+                        <li class="active" data-tab="1">Tab 1</li>
+                        <li data-tab="2">Tab 2</li>
+                        <li data-tab="3">Tab 3</li>
+                        <li data-tab="4">Tab 4</li>
+                    </ul>
+                </div>
+                <div class="tab-content">
+                    <div class="inner-content active" data-tab="1">Content 1</div>
+                    <div class="inner-content" data-tab="2">Content 2</div>
+                    <div class="inner-content" data-tab="3">Content 3</div>
+                    <div class="inner-content" data-tab="4">Content 4</div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+
+    <section class="button">
+        <a class="btn btn-normal">Next tab</a>
+    </section>
+</div>
+
+</body>
 </html>

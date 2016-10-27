@@ -38,61 +38,99 @@
             <a href="#" class="list-group-item"><span>Step 4</span><span>使用目的の確認 </span></a>
         </div>
     </section>
-    <div class="page-content">
-            <div class="title container"><p class="inner">商品種別を選択してください</p></div>
-            <div class="content container">
-            <div class="inner">
-            <button><p>来訪者データ（対象エリア流入者の人数や居住地などを把握できる商圏分析用データ</p><span class="narrow"></span></button>
-            <span >※変更すると以降の設定がリセットされます</span>
+    <div class="page-content container">
+        <section class="block-wrap block-wrap-select">
+            <div class="block-title">
+                <h3 class="inner">商品種別を選択してください</h3></div>
+            <div class="block-content clearfix">
+                <div class="inner">
+                    <select class="form-control">
+                        <option>来訪者データ（対象エリア流入者の人数や居住地などを把握できる商圏分析用データ</option>
+                        <option>来訪者データ（対象エリア流入者の人数や居住地などを把握できる商圏分析用データ</option>
+                        <option>来訪者データ（対象エリア流入者の人数や居住地などを把握できる商圏分析用データ</option>
+                        <option>来訪者データ（対象エリア流入者の人数や居住地などを把握できる商圏分析用データ</option>
+                    </select>
+                    <span><a href="#">※変更すると以降の設定がリセットされます</a></span>
+                </div>
             </div>
+        </section>
+
+        <section class="block-wrap">
+            <div class="block-title">
+                <h3 class="inner">商品種別を選択してください</h3></div>
+            <div class="block-content">
+                <div class="inner">
+                    <div class="method">
+                        <div class="sub-title">
+                            <span >手順①</span>
+                            エリア選択方法
+                        </div>
+                        <div class="rule">
+                           <a class="btn active">都道府県/市区町村単位で指定 </a>
+                           <a class="btn">都道府県/市区町村単位で指定 </a>
+                           <a class="btn">都道府県/市区町村単位で指定 </a>
+                        </div>
+                    </div>
+               <div class="method area">
+                        <div class="sub-title">
+                            <span >手順②</span>
+                             対象エリア 
+                        </div>
+                        <h4>都道府県または市区町村にチェックを入れて、集計したいエリアを選んでください（複数選択可能） </h4>
+                
+                <div class="tab-view">
+                    <ul class="nav nav-tabs">
+                        <li data-tab="1">北海道・東北 </li>
+                        <li class="active" data-tab="2">関東 </li>
+                        <li data-tab="3">東海 </li>
+                        <li data-tab="4">・・ ・  </li>
+                    </ul>
+                <div class="tab-content">
+                    <ul class="name-area" data-tab="1">
+                        <li>東京都</li>
+                        <li class="active">神奈川県</li>
+                        <li>埼玉県</li>
+                        <li>千葉県</li>
+                        <li>群馬県</li>
+                        <li>茨城県</li>
+                        <li>栃木県</li>
+                    </ul>
+
+                    <ul >
+                        <li class="form-group checkbox check-box">
+                            <input id="styles" name="styles" type="checkbox" class="styled" value="1">
+                            <label for="styles">東京都全て</label>
+                        </li>
+                        <li><label><input type="checkbox" /> 東京都全て</label></li>
+                        <li><label><input type="checkbox" /> 足立区</label></li>
+                        <li><label><input type="checkbox" /> 足立区</label></li>
+                        <li><label><input type="checkbox" /> 足立区</label></li>
+                        <li><label><input type="checkbox" /> 足立区</label></li>
+                        <li><label><input type="checkbox" /> 足立区</label></li>
+                        <li><label><input type="checkbox" /> 足立区</label></li>
+                        <li><label><input type="checkbox" /> 足立区</label></li>
+                        <li><label><input type="checkbox" /> 足立区</label></li>
+                        <li><label><input type="checkbox" /> 足立区</label></li>
+                        <li><label><input type="checkbox" /> 足立区</label></li>
+                        <li><label><input type="checkbox" /> 足立区</label></li>
+                        <li><label><input type="checkbox" /> 足立区</label></li>
+                        <li><label><input type="checkbox" /> 足立区</label></li>
+                        <li><label><input type="checkbox" /> 足立区</label></li>
+                        <li><label><input type="checkbox" /> 足立区</label></li>
+                        <span>・・ ・</span> 
+                    </ul>
+                </div>
             </div>
-        
-        <section class="wrap container">
-            <div class="title"><p class="inner"> 集計エリアを指定してください</p>
-            <div class="area content container">
-                <div class="method">
-                    <span >手順①</span>
-                    エリア選択方法
-                </div>
-                <div>
-                <button type="button" class="btn btn-1 active">都道府県/市区町村単位で指定 </button>
-                <button type="button" class="btn btn-2">メッシュで指定 </button>
-                <button type="button" class="btn btn-3">任意の形状で指定 </button>
-                </div>
-                <div class="method">
-                    <span >手順②</span>
-                    対象エリア 
-                </div>
-                <p>都道府県または市区町村にチェックを入れて、集計したいエリアを選んでください（複数選択可能）</p>
             </div>
             </div>
         </section>
-        <!-- <section class="wrap container">
-            <div class="tabview inner">
-                <div class="tab-header">
-                    <ul>
-                        <li class="active" data-tab="1">Tab 1</li>
-                        <li data-tab="2">Tab 2</li>
-                        <li data-tab="3">Tab 3</li>
-                        <li data-tab="4">Tab 4</li>
-                    </ul>
-                </div>
-                <div class="tab-content">
-                    <div class="inner-content active" data-tab="1">Content 1</div>
-                    <div class="inner-content" data-tab="2">Content 2</div>
-                    <div class="inner-content" data-tab="3">Content 3</div>
-                    <div class="inner-content" data-tab="4">Content 4</div>
-                </div>
-        
-            </div>
-        </section> -->
     </div>
-
-
-    <section class="button">
-        <a class="btn btn-normal">Next tab</a>
+    </div>
+    <section class="next-tab container">
+        <a class="btn btn-normal">次へ </a>
     </section>
-</div>
-
+<footer class="container">
+    <div class="inner"></div>
+</footer>
 </body>
 </html>

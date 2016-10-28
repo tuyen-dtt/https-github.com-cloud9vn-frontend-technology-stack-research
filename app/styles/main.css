@@ -139,7 +139,7 @@ header {
   .block-wrap .block-content {
     background: #f2f2f2;
     border-bottom: 2px solid #007dbf;
-    padding: 28px 0; }
+    /* padding: 28px 0; */ }
     .block-wrap .block-content .form-control {
       padding-left: 10px;
       width: 620px; }
@@ -149,19 +149,21 @@ header {
       text-decoration: none;
       font-size: 13px; }
     .block-wrap .block-content .method {
-      border-bottom: 1px solid #cbcbcb; }
+      border-bottom: 1px solid #cbcbcb;
+      padding: 28px 0 28px 0; }
+      .block-wrap .block-content .method.last {
+        border-bottom: 0; }
       .block-wrap .block-content .method.area {
-        border: none;
-        padding-top: 28px; }
+        border: none; }
         .block-wrap .block-content .method.area h4 {
           font-size: 16px;
           color: #555; }
-      .block-wrap .block-content .method .sub-title {
+      .block-wrap .block-content .method .method-title {
         font-size: 24px;
         font-weight: bold;
         position: relative;
         color: #333; }
-        .block-wrap .block-content .method .sub-title:before {
+        .block-wrap .block-content .method .method-title:before {
           height: 20px;
           width: 34px;
           display: block;
@@ -171,12 +173,74 @@ header {
           margin-top: -10px;
           background: url("../images/sprite.png") no-repeat;
           background-position: 0 -204px; }
-        .block-wrap .block-content .method .sub-title span {
-          padding-left: 42px;
+        .block-wrap .block-content .method .method-title span {
+          padding-left: 41px;
           color: #007dbf; }
+      .block-wrap .block-content .method .method-content .btn {
+        font-size: 14px;
+        font-weight: normal;
+        color: #555;
+        width: 165px;
+        height: 42px;
+        background: #fff;
+        border: 1px solid #cbcbcb;
+        margin-right: 21px;
+        border-radius: 1px;
+        line-height: 30px; }
+      .block-wrap .block-content .method .method-content .btn-2 {
+        width: 90px;
+        color: #aaa; }
+      .block-wrap .block-content .method .method-content span {
+        margin-right: 21px; }
+      .block-wrap .block-content .method .method-content .add-time {
+        width: 188px;
+        height: 42px;
+        color: #fff;
+        background-color: #007dbf;
+        font-size: 17px;
+        font-weight: bold;
+        line-height: 30px; }
+      .block-wrap .block-content .method .method-content .table-responsive .table-bordered > tbody > tr > td {
+        border: 0;
+        padding: 0 0 0 41px;
+        color: #555;
+        vertical-align: middle; }
+        .block-wrap .block-content .method .method-content .table-responsive .table-bordered > tbody > tr > td label {
+          vertical-align: top;
+          font-size: 16px;
+          font-weight: 500;
+          color: #007dbf;
+          margin-bottom: 0; }
+        .block-wrap .block-content .method .method-content .table-responsive .table-bordered > tbody > tr > td input {
+          vertical-align: top;
+          height: 16px;
+          width: 16px;
+          margin-top: 2px; }
+        .block-wrap .block-content .method .method-content .table-responsive .table-bordered > tbody > tr > td div {
+          display: inline-block;
+          margin-right: 85px; }
+          .block-wrap .block-content .method .method-content .table-responsive .table-bordered > tbody > tr > td div label {
+            font-size: 16px;
+            color: #555; }
+        .block-wrap .block-content .method .method-content .table-responsive .table-bordered > tbody > tr > td a {
+          color: #007dbf;
+          opacity: 0.7;
+          text-decoration: none;
+          font-size: 13px; }
+      .block-wrap .block-content .method .method-content .table-responsive .table-custom {
+        border: #b2d8ec solid 1px;
+        margin: 0; }
+        .block-wrap .block-content .method .method-content .table-responsive .table-custom tr {
+          border: #b2d8ec solid 1px;
+          height: 48px; }
+          .block-wrap .block-content .method .method-content .table-responsive .table-custom tr.alt {
+            background: #e1e1e1; }
+            .block-wrap .block-content .method .method-content .table-responsive .table-custom tr.alt span {
+              font-size: 16px;
+              font-weight: 500;
+              color: #007dbf; }
       .block-wrap .block-content .method .rule {
-        text-align: center;
-        padding-bottom: 30px; }
+        text-align: center; }
         .block-wrap .block-content .method .rule .btn {
           font-size: 17px;
           font-weight: bold;
@@ -229,60 +293,83 @@ header {
     border: 1px solid #007dbf;
     padding: 13px 0 20px 0;
     background-color: #fff; }
-    .block-wrap .tab-content .name-area {
-      padding: 0;
-      margin: 0; }
-      .block-wrap .tab-content .name-area li {
-        height: 40px;
-        width: 136px;
-        margin-right: 2px;
-        font-size: 16px;
-        color: #555;
-        border: 1px solid #959595;
-        background-color: #fff;
-        border-radius: 1px;
+    .block-wrap .tab-content .area-col {
+      width: 138px;
+      float: left;
+      margin-right: 4px; }
+      .block-wrap .tab-content .area-col:first-child {
+        margin-left: 17px; }
+      .block-wrap .tab-content .area-col ul {
+        padding-left: 0; }
+        .block-wrap .tab-content .area-col ul li {
+          margin-top: 10px;
+          height: 28px; }
+      .block-wrap .tab-content .area-col .btn-a {
+        display: block;
+        width: 139px;
+        height: 42px;
         text-align: center;
-        padding-top: 10px; }
-        .block-wrap .tab-content .name-area li.active, .block-wrap .tab-content .name-area li:active {
-          background-color: #007dbf;
-          color: #fff;
-          border: #007dbf; }
-        .block-wrap .tab-content .name-area li:hover {
-          background: #bbb;
-          border: 1px solid #959595;
-          color: #555; }
-        .block-wrap .tab-content .name-area li:first-child {
-          margin-left: 17px; }
-        .block-wrap .tab-content .name-area li:last-child {
-          margin-right: 17px; }
-    .block-wrap .tab-content .check-box {
-      width: calc(100%/8);
-      margin-left: 14px; }
-      .block-wrap .tab-content .check-box:first-child {
-        display: block; }
-      .block-wrap .tab-content .check-box input {
-        opacity: 0;
-        z-index: 1; }
-      .block-wrap .tab-content .check-box label {
+        background: #e1e1e1;
         color: #555;
-        font-size: 14px;
-        font-weight: normal;
-        margin-top: 15px;
-        margin-bottom: 0;
-        position: relative;
-        padding-left: 5px; }
-        .block-wrap .tab-content .check-box label:before {
-          content: "";
-          width: 17px;
-          height: 17px;
-          border: 1px solid #f3f3f3;
-          -webkit-border-radius: 3px;
-          border-radius: 3px;
-          background-color: #fff;
-          position: absolute;
-          margin-left: -20px;
+        border: 1px solid #a1a1a1;
+        line-height: 42px;
+        overflow: hidden;
+        font-size: 16px; }
+        .block-wrap .tab-content .area-col .btn-a.active, .block-wrap .tab-content .area-col .btn-a:active {
+          color: #fff;
+          background-color: #007dbf;
+          border-color: #007dbf;
+          text-decoration: none; }
+        .block-wrap .tab-content .area-col .btn-a:hover {
+          background-color: #bbb;
+          border-color: #959595;
+          text-decoration: none; }
+      .block-wrap .tab-content .area-col .checkbox-wrap {
+        padding-left: 20px;
+        display: block; }
+        .block-wrap .tab-content .area-col .checkbox-wrap label {
           display: inline-block;
-          left: 0; }
+          position: relative;
+          padding-left: 5px;
+          font-size: 14px;
+          font-weight: normal; }
+          .block-wrap .tab-content .area-col .checkbox-wrap label:before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            left: 0;
+            margin-left: -20px;
+            border: 1px solid #555555;
+            background-color: #fff;
+            -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+            -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+            transition: border 0.15s ease-in-out, color 0.15s ease-in-out; }
+          .block-wrap .tab-content .area-col .checkbox-wrap label:after {
+            display: inline-block;
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            left: 0;
+            top: 0;
+            margin-left: -20px;
+            padding-left: 3px;
+            padding-top: 1px;
+            font-size: 11px;
+            color: #555555; }
+        .block-wrap .tab-content .area-col .checkbox-wrap input[type="checkbox"]:focus + label:before {
+          outline: thin dotted;
+          outline: 5px auto -webkit-focus-ring-color;
+          outline-offset: -2px; }
+        .block-wrap .tab-content .area-col .checkbox-wrap input[type="checkbox"]:checked + label::after {
+          background: url("../images/sprite.png") no-repeat 2px -288px;
+          content: " "; }
+        .block-wrap .tab-content .area-col .checkbox-wrap input[type="checkbox"]:disabled + label {
+          opacity: 0.65; }
+        .block-wrap .tab-content .area-col .checkbox-wrap input[type="checkbox"]:disabled + label::before {
+          background-color: #eeeeee;
+          cursor: not-allowed; }
 
 .block-wrap-select select {
   height: 42px;
@@ -291,6 +378,16 @@ header {
   background: url("../images/select-bg.png") no-repeat top right;
   -webkit-appearance: none;
   -moz-appearance: none; }
+
+.output {
+  background-color: #fff; }
+  .output .output-title {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    color: #007dbf; }
+  .output .output-table th {
+    background-color: #e1e1e1; }
 
 .next-tab {
   height: 82px;
@@ -312,5 +409,20 @@ footer {
   footer .inner {
     background-color: #007dbf;
     height: 9px; }
+
+/* .table-custom {
+	border: #007dbf solid 1px;
+}
+.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+   border: 0;
+       padding: 12px 0px;
+}
+.table-custom tr.alt{
+	background: #e1e1e1;
+}
+
+.table-custom tr{
+	border: #007dbf solid 1px;
+} */
 
 /*# sourceMappingURL=main.css.map */

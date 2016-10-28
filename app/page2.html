@@ -1,0 +1,291 @@
+<!DOCTYPE HTML>
+
+<html lang="ja">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Trainning</title>
+    <link type="text/css" rel="stylesheet" href="../bower_components/normalize-css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../app/styles/main.css">
+    
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <div class="inner">
+            <nav class="top-nav">
+                <ul>
+                    <li><a href="#">○○○○取引先名 </a></li>
+                    <li><a href="#">○○○○部署名 </a></li>
+                    <li class="congestion"><a href="#">混雑 太郎 様 </a></li>
+                </ul>
+                <span class="log-out"><a href="#">ログアウト</a></span>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<div class="top-wrap">
+    <section class="block-step container">
+        <div class="list-group inner">
+            <a href="#" class="list-group-item active "><span>Step 1</span><span>商品種別・集計エリアの指定 </span></a>
+            <a href="#" class="list-group-item "><span>Step 2</span><span>集計条件の設定 </span></a>
+            <a href="#" class="list-group-item"><span>Step 3</span><span>集計項目の確認  </span></a>
+            <a href="#" class="list-group-item"><span>Step 4</span><span>使用目的の確認 </span></a>
+        </div>
+    </section>
+    <div class="page-content container">
+        
+        <section class="block-wrap">
+            <div class="block-title">
+                <h3 class="inner">商品種別を選択してください</h3></div>
+            <div class="block-content">
+                <div class="inner">
+                    <div class="method">
+                        <div class="method-title">
+                            <span >手順①</span>
+                            エリア選択方法
+                        </div>
+                        <div class="method-content">
+                           <div class="btn">YYYY/MM/DD</div>
+                           <span>~</span>
+                           <div class="btn">YYYY/MM/DD</div>
+                           <div class="btn add-time">期間追加</div>
+                        </div>
+                        </div>
+                    <div class="method">    
+                    <div class="method-title">
+                        <span >手順②</span>
+                             滞在時間の指定  
+                    </div>
+                    <div class="method-content">
+                           <div class="btn btn-2">15</div>
+                           <span>分</span>
+                           <span>~</span>
+                           <input class="btn btn-2" placeholder="指定な"/>
+                           <span>分</span>
+                           <span><a href="#">※変更すると以降の設定がリセットされます</a></span>
+                        </div>
+                </div>
+                <div class="method">
+                        <div class="method-title ">
+                            <span >手順③</span>
+                             集計項目の指定
+                        </div>
+                        <div class="method-content">
+                          <div class="table-responsive">
+                          <table class="table table-bordered table-custom">
+                             <tbody>
+                                <tr class="alt">
+                                    <td style="width: 190px;">
+                                        <input type="radio" id="radio-1"/>
+                                        <label for="radio-1">足立区</label>
+                                    </td>
+                                    <td>
+                                        <span>居住者・勤務者の集計対象設定</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="radio" id="radio-2"/>
+                                        <label for="radio-2">足立区</label>
+                                    </td>
+                                    <td>
+                                        <span>居住者・勤務者の集計対象設定</span>
+                                    </td>
+                                </tr>
+                                <tr class="alt">
+                                    <td>
+                                        <input type="radio" id="radio-3"/>
+                                        <label for="radio-3">足立区</label>
+                                    </td>
+                                    <td>
+                                        <span>居住者・勤務者の集計対象設定</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="radio" id="radio-4"/>
+                                        <label for="radio-4">足立区</label>
+                                    </td>
+                                    <td>
+                                        <span>居住者・勤務者の集計対象設定</span>
+                                    </td>
+                                </tr>
+                                <tr class="alt">
+                                    <td>
+                                        <input type="radio" id="radio-5"/>
+                                        <label for="radio-5">足立区</label>
+                                    </td>
+                                    <td>
+                                        <span>居住者・勤務者の集計対象設定</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="radio" id="radio-6"/>
+                                        <label for="radio-6">足立区</label>
+                                    </td>
+                                    <td>
+                                        <span>居住者・勤務者の集計対象設定</span>
+                                    </td>
+                                </tr>
+                                <tr class="alt">
+                                    <td>
+                                        <input type="radio" id="radio-7"/>
+                                        <label for="radio-7">足立区</label>
+                                    </td>
+                                    <td>
+                                        <span>居住者・勤務者の集計対象設定</span>
+                                    </td>
+                                </tr>
+                             </tbody>
+                          </table>
+                          </div>
+                        </div>
+                        </div>
+                        <div class="method last">    
+                    <div class="method-title">
+                        <span>手順④ </span>
+                             詳細設定  
+                    </div>
+                    <div class="method-content">
+                        <div class="table-responsive">
+                         <table class="table table-bordered table-custom">
+                             <tbody>
+                                <tr class="alt">
+                                    <td>
+                                        <span>人数</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div>
+                                        <input type="radio" id="radio-21"/>
+                                        <label for="radio-21">足立区</label>
+                                        </div>
+                                        <div>
+                                        <input type="radio" id="radio-22"/>
+                                        <label for="radio-22">足立区</label>
+                                        </div>
+                                        <div>
+                                        <input type="radio" id="radio-23"/>
+                                        <label for="radio-23">足立区</label>
+                                        </div>
+                                        <div>
+                                        <input type="radio" id="radio-24"/>
+                                        <label for="radio-24">足立区</label>
+                                        </div>
+                                    </td>
+
+                                </tr>
+                                <tr class="alt">
+                                    <td>
+                                        <span>人数</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div>
+                                        <input type="radio" id="radio-25"/>
+                                        <label for="radio-25">足立区</label>
+                                        </div>
+                                        <div>
+                                        <input type="radio" id="radio-26"/>
+                                        <label for="radio-26">足立区</label>
+                                        </div>
+                                        <div>
+                                        <input type="radio" id="radio-27"/>
+                                        <label for="radio-27">足立区</label>
+                                        </div>
+                                        <div>
+                                        <input type="radio" id="radio-28"/>
+                                        <label for="radio-28">足立区</label>
+                                        </div>
+                                        <div>
+                                        <input type="radio" id="radio-29"/>
+                                        <label for="radio-29">足立区</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="alt">
+                                    <td>
+                                        <span>居住者・勤務者の集計対象設定</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div>
+                                        <input type="radio" id="radio-30"/>
+                                        <label for="radio-30">足立区</label>
+                                        </div>
+                                        <div>
+                                        <input type="radio" id="radio-31"/>
+                                        <label for="radio-31">足立区</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="alt">
+                                    <td>
+                                        <span>年まとめ</span>
+                                        <a href="#">※複数年の同月をひとつの月として合算する場合は、「合算する」を選択してください。 </a>
+                                    </td>
+                                </tr>
+                                <tr class="alt">
+                                    <td>
+                                        <span>クロス集計軸の追加</span>
+                                    </td>
+                                </tr>
+                             </tbody>
+                          </table> 
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    </div>
+    <div class="block-wrap container">
+    <div class="block-content">
+    <div class="output">
+    <div class="output-title">▼上記設定での出力サンプル▼  </div>
+    <div class="table-responsive output-table">
+    <table class="table table-bordered">
+    <thead>
+      <tr class="alt">
+        <th>出発地</th>
+        <th>平休日</th>
+        <th>のべ推定人数 </th>
+        <th>推定ＵＵ </th>
+        <th>のべ実数 </th>
+        <th>期間名</th>
+        <th>ＵＵ実数</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2013/1/1～2015/12/31 </td>
+        <td>平日</td>
+        <td>神奈川県茅ケ崎市</td>
+        <td>450</td>
+        <td>345</td>
+        <td>242</td>
+        <td>210</td>
+      </tr>
+      </tbody>
+  </table>
+  </div>
+ </div>
+ </div>
+ </div>
+<section class="next-tab container">
+    <a class="btn btn-normal">次へ </a>
+</section>
+<footer class="container">
+    <div class="inner"></div>
+</footer>
+</body>
+</html>

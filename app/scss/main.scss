@@ -42,7 +42,7 @@ body {
 
 .inner {
 	margin:0 auto;
-	padding:0 62.5px;
+	padding:0 5.44%;
 }
 
 a {
@@ -74,22 +74,22 @@ header{
 			float: left;
 			text-decoration: none;
 			margin: 10px 125px 6px 0;
-			}
-			}
-			.congestion {
+			&.congestion {
 					font-weight: normal;
 					font-size: 16px;
 				}
-			.log-out {
+			&.log-out {
 			font-weight:bold;	
 			font-size:16px;
 			float: right;
-			margin-right:0;
+			margin:0;
 			padding: 10px 37px 7px 37px;
 			background-color:$light-blue;
 			border-radius: 5px;
 			text-decoration: underline;
-			}	
+			}
+			}
+		}	
 	}
 }
 
@@ -109,7 +109,7 @@ header{
 		.list-group-item {
 			display: inline-block;
 		    position: relative;
-		    width: 219px;
+		    width: 21.4%;
 		    height: 83px;
 		    border: $blue solid 3px;
 		    vertical-align: top;
@@ -118,9 +118,7 @@ header{
 		    font-size: 18px;
 			
 			span{
-				width: 254px;
-			    position: relative;
-			    z-index: 10;
+				z-index: 10;
 				}
 			&:hover, &.active{
 				z-index: 2;
@@ -158,12 +156,12 @@ header{
 				display: none;
 			}
 			&:first-child{
-				width: 242px;
+				width: 23.5%;
 			    margin-left: 0;
 			    border-radius: 4px;
 			}
 			&:last-child{
-				width: 241px;
+				width: 23.5%;
 			    margin-right: 0;
 			    border-radius: 4px;
 			}
@@ -188,9 +186,11 @@ header{
 	    border-bottom: 2px solid #007dbf;
     	   .visitor-data{
 	    	padding-left: 10px;
-    		width: 620px;
-    		margin: 28px 0;
-	    }
+    		width: 60.5%;
+		    margin: 28px 0;
+		    padding: 11px 18px;
+		    border: 1px solid #cbcbcb;
+			    }
 	    span{
 	    	a{
 	    	color: $blue;
@@ -239,29 +239,27 @@ header{
 		font-size: 14px;
 		font-weight:normal;
 		color: #555;
-		width:165px;
-		height: 42px;
+		width:16.1%;
 		background:$white;
 		border: 1px solid #cbcbcb;
-		margin-right: 21px;
+		margin-right: 2%;
 		border-radius:1px;
-		line-height: 30px;
+		line-height: 42px;
+		padding:0
 		}
 		.btn-2{
-		width:90px;
+		width:8.8%;
 		color: #aaa;
 		}
 		span{
-			margin-right: 21px;
+			margin-right: 2%;
 		}
 		.add-time{
-			width:188px;
-			height: 42px;
+			width:18.3%;
 			color: $white;
 			background-color:$blue;
 			font-size: 17px;
 			font-weight:bold;
-			line-height: 30px;
 		}
 		.table-responsive{
 			.table-bordered>tbody>tr>td{
@@ -285,7 +283,7 @@ header{
        			}
        			div{
        				display: inline-block;
-       				margin-right: 85px;
+       				margin-right:  8.3%;
        				label{
        					font-size: 16px;
        					color: #555;
@@ -464,7 +462,7 @@ header{
 		font-size: 17px;
 		font-weight:bold;
 		color: $blue;
-		width:323px;
+		width:31.5%;
 		line-height: 60px;
 		background:$white;
 		border: 3px solid $gray;
@@ -476,7 +474,7 @@ header{
 		&.active, &:active{
 			background-color: $blue;
 			color: $white;
-			border:$blue;
+			border: #007dbf solid 3px;
 			box-shadow:none;
 		}
 		&:hover{
@@ -496,22 +494,22 @@ header{
 		font-size: 17px;
 		font-weight:bold;
 		line-height: 50px;
-		width: 238px;
+		width: 23.2%;
 		background:$white;
 		border: 1px solid $blue;
 		border-top-left-radius: 20px;
 		border-top-right-radius: 20px;
 		margin-right: 13px;
-		&:first-child{
-		margin-left:17px;
+		&:first-child,{
+		 	margin-left:1.66%;
 		}
 		&:last-child{
-			margin-right: 17px;
+		 	margin-right: 1.66%;
 		}
 		&.active, &:active{
 			background-color: $blue;
 			color: $white;
-			border:$blue;
+			border:$blue solid 1px;
 		}
 		&:hover{
 			background:#e1e1e1;
@@ -522,15 +520,14 @@ header{
 	}
 	.tab-content{
 		border:1px solid $blue;
-		padding: 13px 0 20px 0;
+		padding: 13px 1.5% 20px 1.5%;
 		background-color:$white;
 		.area-col{
-			width: 138px;
+			width: 13.9%;
 		    float: left;
 		    margin-right: 4px;
-		    
-		    &:first-child{
-			    	margin-left: 17px;
+			&:last-child{
+			  	margin-right: 0;
 			    }
 		    ul{
 		    	padding-left:0;
@@ -541,7 +538,6 @@ header{
 		    }
 		    .btn-a{
 		    	display: block;
-			    width: 139px;
 			    text-align: center;
 			    background: #e1e1e1;
 			    color: #555;
@@ -625,10 +621,14 @@ header{
     height: 42px;
     border: none;
     display: inline-block;
-    background: url("../images/select-bg.png") no-repeat top right;
+    background: $white;
     -webkit-appearance:none;
     -moz-appearance:none;
 	}
+}
+
+.narrow {
+	background: url("../images/narrow.png") no-repeat;
 }
 
 .output{
@@ -660,13 +660,12 @@ header{
 }
 
 .next-tab{
-	height: 82px;
 	background-color: $white;
-	vertical-align: middle;
     text-align: center;
+    margin-bottom: 28px;
 	.btn-normal{
-		height: 54px;
-		width: 272px;
+		line-height: 42px;
+		width: 26.5%;
 		border-radius:5px;
 		background-color:$blue;
 		color: $white;
@@ -689,40 +688,39 @@ footer{
         width: 970px;
     }
 
-	header .container .log-out{
+	header .container .top-nav ul li.log-out{
 		padding: 10px 15px 7px;
 	}
 
-    .top-wrap .list-group .list-group-item:first-child {
-        width: 200px;
-    }
-    .top-wrap .list-group .list-group-item:last-child {
-        width: 185px;
+	.top-wrap .list-group{
+    	.list-group-item{
+	    	margin: 0 15px 0 9px;
+    	}
     }
 
-    .top-wrap .list-group .list-group-item {
-        width: 179px;
-    }
-    .top-wrap .list-group .list-group-item span{
-    	width: 180px;
-    }
-	
-	.block-wrap .block-content span a{
+	.block-wrap .block-content .method .rule .btn{
+		margin-bottom: 10px;
+	}
+
+   	.block-wrap .block-content span a{
 		display: block;
     	margin-bottom: 28px;
 	}
-
-    .block-wrap .block-content .method .rule .btn{
-    	    width: 263px;
+	
+	.block-wrap .nav-tabs li{
+        margin-right: 11px;
     }
 
-    .block-wrap .nav-tabs li{
-        	width: 193px;
-    }
-    .block-wrap .tab-content .area-col, .block-wrap .tab-content .area-col .btn-a{
-    	width: 112px;
-    }
+    .block-wrap .tab-content .area-col{
+    	    margin-right: 3px;
+    	}	
 }
+
+//page2
+.block-wrap .block-content .method .method-content .table-responsive .table-custom tr.alt-1 .collapse-header:before{
+	margin-left: -32px;
+}
+
 
 @media (max-width: 991px) {
     .container {
@@ -732,60 +730,70 @@ footer{
     	margin-right: 50px;
     }
     .top-wrap .list-group{
-    	text-align: center;
     	   	.list-group-item{
-	    		width:220px;
-	    		margin-left: 24px;
-		    	&:first-child{
-		    		width:241px;
-		    	}
-		    	&:last-child{
-		    		width: 241px;
-		    	}
-		    	span{
-					width:245px;
-		    	}
+		    	width: 20%;
     	}
     }
     .block-wrap .block-content .method .rule .btn{
-    	    width: 263px;
-    	    margin-bottom: 10px;
+    	
+    	padding: 0 10px;
+    	width: inherit;
     }
-    .block-wrap .nav-tabs li{
-    	width: 137px;
+    
+	.block-wrap .nav-tabs li{
+    	margin-right: 8px;
     }
-    .block-wrap .tab-content .area-col, .block-wrap .tab-content .area-col .btn-a{
-    	    width: 80px;
+
+   	 .block-wrap .tab-content .area-col{
+    	    margin-right: 2px;
     }
+
     .block-wrap .tab-content .area-col .checkbox-wrap{
-    	    padding-left: 2px;
-    	    label{
-    	    	font-size: 12px;
-    	    	padding-left: 0px;
-    	    	&:before{
-    	    		width: 14px;
-				    height: 14px;
-				    margin: -1px 0px 0 -17px;
-    	    	}
-    	    }
-    }
-    .block-wrap .tab-content .area-col .checkbox-wrap input[type="checkbox"]:checked + label::after{
-    	background-position:5px -290px;
-    }
-    .block-wrap .block-title h3{
-    	    padding-top: 3px;
+    	padding-left: 5px;
+    	label{
+    		font-size: 13px;
+    		padding-left: 0;
+    	}
     }
 }
+
 
 @media (max-width: 767px) {
     .container {
         width: 100%;
     }
-
-   /*  .top-wrap .list-group .list-group-item:first-child,
-    .top-wrap .list-group .list-group-item {
-        display: block;
-    } */
+	header .container .top-nav ul li{
+		margin-right: 64px;
+		&.log-out{
+			margin-left: 56px;
+			float: left;
+		}
+	}
+	.top-wrap .list-group .list-group-item{
+		margin: 0 16px 0 12px;
+		width: 40%;
+		margin-bottom: 5px;
+		&.item-3{
+			margin-left: 23px;
+		}
+	}
+	.top-wrap .list-group .list-group-item{
+		&:first-child, &:last-child{
+		width: 46%;
+		}
+	}
+	.block-wrap .block-content .method .rule .btn:last-child{
+		margin-right: 24px;
+	}
+	.block-wrap .nav-tabs li{
+		margin-right: 5px;
+		font-size: 14px;
+	}
+	.block-wrap .tab-content .area-col{
+		margin-right: 4px;
+    	height: 206px;
+    	width: 23.9%;
+	}
 }
 
 @media (max-width: 479px) {
